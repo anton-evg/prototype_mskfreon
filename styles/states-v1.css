@@ -1,0 +1,160 @@
+.service-header {
+  padding: 34px 0;
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.service-header h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -.04em;
+}
+
+.service-header p {
+  margin: 8px 0 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.service-section {
+  padding: 52px 0;
+  background: var(--color-paper);
+}
+
+.service-section--surface {
+  background: var(--color-surface);
+}
+
+.service-section h2 {
+  margin: 0 0 24px;
+  font-size: 30px;
+  letter-spacing: -.035em;
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.state-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.state-card {
+  padding: 22px;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-control);
+}
+
+.state-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.state-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.state-card--success {
+  border-color: #99b7a3;
+  background: #edf7f0;
+}
+
+.state-card--error {
+  border-color: #d5a69f;
+  background: #fbefed;
+}
+
+.state-card--disabled {
+  background: var(--color-soft);
+}
+
+.modal-stage .lead-form .field {
+  inline-size: 100%;
+}
+
+.modal-stage .modal {
+  inline-size: 100%;
+}
+
+.modal-stage .modal__head {
+  flex-wrap: wrap;
+}
+
+.modal__body > p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.cookie-stage {
+  padding: 28px;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.cookie-stage p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.cookie-stage__actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.cookie-stage__actions a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.service-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-surface);
+}
+
+.service-table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.service-table th,
+.service-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.service-table th {
+  color: var(--color-muted);
+  font-size: 11px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.service-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.catalog-state {
+  display: grid;
+  gap: 14px;
+}
+
+.catalog-state .product-card__price {
+  margin-top: 0;
+}

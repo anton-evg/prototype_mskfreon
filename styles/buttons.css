@@ -1,0 +1,21 @@
+.button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1); white-space: nowrap; font-family: var(--font-sans); font-weight: 600; line-height: 1.4; }
+.button--sm { min-width: 4.125rem; min-height: 2.062rem; padding: 0.4375rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; }
+.button--md { min-width: 5.312rem; min-height: 2.5rem; padding: 0.625rem 1.125rem; border-radius: var(--radius-md); font-size: 0.875rem; }
+.button--lg { min-width: 6.25rem; min-height: 3rem; padding: 0.8125rem 1.375rem; border-radius: var(--radius-lg); font-size: 1rem; }
+.button--primary { background: var(--color-primary); color: var(--color-white); box-shadow: var(--shadow-control); }
+.button--primary-light { background: var(--color-white); color: var(--color-primary); }
+.button--secondary { border: 0.0625rem solid var(--color-border); background: var(--color-surface); color: var(--color-primary); }
+.button--secondary-dark { border: 0.0625rem solid rgb(255 255 255 / 70%); background: transparent; color: var(--color-white); }
+.button--tertiary { background: var(--color-blue-soft); color: var(--color-blue); }
+.button--tertiary-dark { background: var(--color-dark); color: var(--color-white); }
+.button--icon { min-width: 0; padding: 0; }
+.button--icon.button--sm { width: 1.5rem; }
+.button--icon.button--md { width: 2.125rem; }
+.button--icon.button--lg { width: 2.5rem; }
+.button__icon { width: 0.875rem; height: 0.875rem; object-fit: contain; }
+.button--sm .button__icon { width: 0.625rem; height: 0.625rem; }
+.button--lg .button__icon { width: 1.125rem; height: 1.125rem; }
+.button--square { min-width: 0; padding: 0; }
+.button--square.button--sm { width: 1.5rem; }
+.button--square.button--md { width: 2.125rem; }
+.button--square.button--lg { width: 2.5rem; }

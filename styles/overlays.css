@@ -1,0 +1,112 @@
+/* Reusable popup/modal scaffold. Size is driven by content and padding. */
+.modal-stage {
+  display: grid;
+  place-items: center;
+  padding: clamp(24px, 3vw, 38px);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #e2e7ef 0%, #edf0f5 100%);
+}
+
+.modal-stage--forms {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+.modal {
+  position: relative;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 26px 100px 18px 28px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.modal__title {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  right: 18px;
+  padding: 7px 10px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.modal__body {
+  padding: 26px 28px 28px;
+}
+
+.form-stack {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.form-socials {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  color: var(--color-muted);
+  font-size: 11px;
+}
+
+.form-socials__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form-socials__links a {
+  display: inline-flex;
+  padding: 7px 10px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+}
+
+.form-socials__links img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Legacy names used by states.html; keep them reusable for generated states. */
+.popup-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin: -22px -22px 18px; padding: 18px 22px; border-bottom: 1px solid var(--color-line); }
+.popup-head h2 { margin: 0; }
+.popup-body { display: grid; gap: 0; }
+.form { display: grid; gap: 10px; margin-top: 18px; }
+.check { display: flex; gap: 8px; color: var(--color-muted); font-size: 11px; line-height: 1.45; }
+.check-box { display: block; width: 14px; height: 14px; flex: 0 0 14px; border: 1px solid var(--color-primary); border-radius: 2px; background: var(--color-surface); }
+.close { flex: 0 0 auto; padding: 0; border: 0; background: transparent; color: var(--color-muted); font-size: 11px; line-height: 1.4; text-transform: lowercase; }
+.contact-alternatives { display: flex; align-items: center; gap: 8px; margin-top: 4px; color: var(--color-muted); font-size: 11px; }
+.contact-alternatives a { display: inline-flex; }
+.contact-alternatives img { width: 24px; height: 24px; object-fit: contain; }
+
+@media (max-width: 720px) {
+  .modal-stage--forms { grid-template-columns: 1fr; }
+}

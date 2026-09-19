@@ -1,0 +1,13 @@
+.field { display: flex; align-items: center; width: 14.62rem; height: 2.625rem; overflow: hidden; border: 0.0625rem solid var(--color-border-light); border-radius: var(--radius-md); background: var(--color-white); box-shadow: var(--shadow-control); }
+.field input, .field textarea { min-width: 0; width: 100%; height: 100%; padding: 0 0.75rem; border: 0; outline: 0; background: transparent; color: var(--color-primary); font: 400 0.75rem/1.125rem var(--font-sans); }
+.field input::placeholder, .field textarea::placeholder { color: var(--color-primary); opacity: 1; }
+.field--underline { width: 19.31rem; height: 3.812rem; border-width: 0 0 0.0625rem; border-radius: 0; box-shadow: none; }
+.field--underline input { padding: 0; font-size: 1rem; line-height: 1.5rem; }
+.field--textarea { width: 11.12rem; height: 3.75rem; }
+.field--textarea textarea { padding: 0.625rem; resize: none; }
+.field--textarea-large { height: 4.25rem; }
+.field__icon { width: 0.875rem; height: 0.875rem; flex: 0 0 0.875rem; margin-inline: 0.75rem 0; object-fit: contain; }
+.field--icon-right .field__icon { order: 2; margin-inline: 0 0.75rem; }
+.field--icon-left input, .field--icon-left textarea { padding-left: 0.375rem; }
+.field--prefix > span { display: inline-flex; align-items: center; align-self: stretch; padding: 0 0.5rem; border-right: 0.0625rem solid var(--color-border-light); background: var(--color-surface); color: var(--color-primary); font-weight: 600; }
+.field__action { flex: 0 0 auto; margin-right: 0.25rem; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); background: var(--color-primary); color: var(--color-white); font-weight: 600; }

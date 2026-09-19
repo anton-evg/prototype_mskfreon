@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.container,
+.site-header__inner {
+  inline-size: calc(100% - 56px);
+  margin-inline: auto;
+}
+
+@media (max-width: 1180px) {
+  .container,
+  .site-header__inner {
+    inline-size: calc(100% - 36px);
+  }
+}
