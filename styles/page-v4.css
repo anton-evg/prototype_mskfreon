@@ -258,9 +258,16 @@ button,
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 30px 0 0;
+  margin: 8px 0 0;
   padding: 0;
   list-style: none;
+}
+
+.hero__warehouse-label {
+  margin: 30px 0 0;
+  color: rgb(255 255 255 / 72%);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .hero__proofs li {
@@ -901,6 +908,29 @@ button,
   gap: 18px;
 }
 
+.reviews-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.reviews-tab {
+  padding: 9px 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-primary-dark);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.reviews-tab--active {
+  border-color: var(--color-primary-dark);
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
 .reviews-platform {
   display: inline-flex;
   gap: 8px;
@@ -919,8 +949,7 @@ button,
 
 .review-card {
   display: grid;
-  align-content: space-between;
-  gap: 28px;
+  gap: 14px;
   padding: 24px;
   border: 1px solid var(--color-line);
   border-radius: 14px;
@@ -935,14 +964,12 @@ button,
   line-height: 1.55;
 }
 
-.review-card__stars {
-  display: flex;
-  gap: 3px;
+.review-card .media-placeholder {
+  margin: 0;
 }
 
-.review-card__stars img {
-  width: 18px;
-  height: 18px;
+.review-card .media-placeholder__body {
+  padding: 72px 20px;
 }
 
 .review-card__source {
