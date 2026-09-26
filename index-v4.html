@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles/form-controls.css">
   <link rel="stylesheet" href="styles/media-placeholder.css">
   <link rel="stylesheet" href="styles/overlays.css">
-  <link rel="stylesheet" href="styles/page-v3.css">
+  <link rel="stylesheet" href="styles/page-v4.css">
 </head>
 <body class="prototype--with-comments">
   <main>
@@ -54,12 +54,12 @@
             <div class="hero__copy">
               <div class="tagged">
                 <span class="tag-label">&lt;h1&gt;</span>
-                <h1>Сертифицированный фреон от прямого поставщика <b>без наценок перекупщиков</b></h1>
+                <h1>Сертифицированный фреон от прямого поставщика <b>без наценок</b></h1>
               </div>
               <div class="tagged">
                 <span class="tag-label">&lt;p&gt;</span>
                 <span class="tag-label tag-label--second">&lt;b&gt;</span>
-                <p class="hero__lead">Отгрузка от 1 баллона до еврофуры <b>через час после оплаты</b>. Быстрая доставка по всей России.</p>
+                <p class="hero__lead"><b>Любой объем</b> — от 1 баллона до оптовой партии — уже на складе. Отгрузка <b>через час после оплаты</b>, доставка по всей России.</p>
               </div>
               <div class="hero__actions">
                 <button class="button button--light button--lg" type="button">
@@ -78,19 +78,16 @@
               </ul>
             </div>
             <aside class="hero-price-panel" aria-label="Популярные позиции">
-              <p class="hero-price-panel__caption">Цена за 1 баллон и оптовая цена от 50 шт.</p>
-              <article class="hero-price-card">
-                <div><strong>R-404A</strong><span>10,9 кг</span></div>
-                <div class="hero-price-card__prices"><b>от 9 700 ₽</b><span>опт от 50 шт. — 9 500 ₽</span></div>
-              </article>
-              <article class="hero-price-card">
-                <div><strong>R-507</strong><span>11,3 кг</span></div>
-                <div class="hero-price-card__prices"><b>от 9 700 ₽</b><span>опт от 50 шт. — 9 500 ₽</span></div>
-              </article>
-              <article class="hero-price-card">
-                <div><strong>R-134A</strong><span>Минимальная цена</span></div>
-                <div class="hero-price-card__prices"><b>от 11 500 ₽</b><span>опт от 50 шт. — 11 300 ₽</span></div>
-              </article>
+              <table class="hero-price-table">
+                <thead>
+                  <tr><th scope="col">Фреон</th><th scope="col">Розница</th><th scope="col">От 10 шт.</th><th scope="col">От 50 шт.</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row"><strong>R-404A</strong></th><td>9 700 ₽</td><td>9 600 ₽</td><td>9 500 ₽</td></tr>
+                  <tr><th scope="row"><strong>R-507</strong></th><td>9 700 ₽</td><td>9 600 ₽</td><td>9 500 ₽</td></tr>
+                  <tr><th scope="row"><strong>R-134A</strong></th><td>11 500 ₽</td><td>11 400 ₽</td><td>11 300 ₽</td></tr>
+                </tbody>
+              </table>
             </aside>
           </div>
         </section>
@@ -104,27 +101,6 @@
       </aside>
     </div>
 
-    <div class="block-row" id="scenarios">
-      <div class="prototype-block">
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <div class="tagged"><span class="tag-label">&lt;h2&gt;</span><h2>Поставка под требования вашего рабочего процесса</h2></div>
-              <div class="tagged"><span class="tag-label">&lt;p&gt;</span><p>Подберем условия поставки с учетом задачи, объема партии, документов и города получения.</p></div>
-            </div>
-            <div class="scenario-grid">
-              <article class="scenario-card"><div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Сервисные компании</h3></div><div class="tagged"><span class="tag-label">&lt;p&gt;</span><p>Фреон для обслуживания и ремонта холодильного, климатического и вентиляционного оборудования.</p></div><div class="scenario-card__important">Важно: наличие, цена и скорость отгрузки.</div></article>
-              <article class="scenario-card"><div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Производственные предприятия</h3></div><div class="tagged"><span class="tag-label">&lt;p&gt;</span><p>Поставка для холодильного оборудования и систем охлаждения на заводах и пищевых предприятиях.</p></div><div class="scenario-card__important">Важно: объем партии, доставка и документы.</div></article>
-              <article class="scenario-card"><div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Тендерные закупки</h3></div><div class="tagged"><span class="tag-label">&lt;p&gt;</span><p>Подготовка счета, договора, ГТД и сертификатов соответствия по запросу.</p></div><div class="scenario-card__important">Важно: комплект документов и согласованный срок поставки.</div></article>
-              <article class="scenario-card"><div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Региональные продавцы</h3></div><div class="tagged"><span class="tag-label">&lt;p&gt;</span><p>Поставка партий для пополнения ассортимента и последующей перепродажи.</p></div><div class="scenario-card__important">Важно: закупочная цена, объем и стоимость логистики.</div></article>
-            </div>
-            <div class="section-actions"><button class="button button--primary button--lg" type="button">Обсудить условия поставки<img class="button__icon" src="assets/icons/arrow-small-white.svg" alt=""></button></div>
-          </div>
-        </section>
-      </div>
-      <aside class="block-comment"><div class="block-comment__inner"><p class="comment-kicker">Комментарий</p><h2>Сценарии закупки</h2><p class="comment-text">Посетитель узнает свою ситуацию и сразу видит важные для нее условия. Блок связывает характеристики поставки с реальными задачами покупателей.</p></div></aside>
-    </div>
-
     <div class="block-row" id="catalog">
       <div class="prototype-block">
         <section class="section section--surface">
@@ -136,7 +112,7 @@
               </div>
               <div class="tagged">
                 <span class="tag-label">&lt;p&gt;</span>
-                <p>Минимальная цена за баллон указана в карточке. Розничная и оптовая цена — ниже.</p>
+                <p>Минимальная цена за баллон указана в карточке. Подробные условия — в матрице ниже.</p>
               </div>
             </div>
 
@@ -146,6 +122,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-22</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-22</h3></div></div>
+                <p class="product-card__description">Для старых кондиционеров и холодильников.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 9 900 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -156,6 +133,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-410A</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-410A</h3></div></div>
+                <p class="product-card__description">Для современных домашних кондиционеров.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 10 300 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -166,6 +144,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-404A</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-404A</h3></div></div>
+                <p class="product-card__description">Для торговых витрин и морозильников.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 8 600 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -176,6 +155,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-134A</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-134A</h3></div></div>
+                <p class="product-card__description">Для автомобильных кондиционеров.</p>
                 <p class="product-card__availability product-card__availability--order">● под заказа</p>
                 <div class="product-card__price"><strong>от 11 500 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -186,6 +166,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-407C</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-407C</h3></div></div>
+                <p class="product-card__description">Для промышленных систем кондиционирования.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 9 500 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -196,6 +177,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-507</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-507</h3></div></div>
+                <p class="product-card__description">Для промышленного холодильного оборудования.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 9 500 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -206,6 +188,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-290</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-290</h3></div></div>
+                <p class="product-card__description">Для тепловых насосов и чиллеров.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 6 100 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -216,6 +199,7 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-600</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-600</h3></div></div>
+                <p class="product-card__description">Для бытовых домашних холодильников.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 6 100 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
@@ -226,31 +210,74 @@
                   <div class="media-placeholder__body"><img class="media-placeholder__icon" src="assets/icons/Image.svg" alt=""><p class="media-placeholder__caption">Фото баллона R-32</p></div>
                 </figure>
                 <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><div class="product-card__head"><h3>Фреон R-32</h3></div></div>
+                <p class="product-card__description">Для новых инверторных кондиционеров.</p>
                 <p class="product-card__availability product-card__availability--in-stock">● в наличии</p>
                 <div class="product-card__price"><strong>от 11 100 ₽</strong></div>
                 <div class="product-card__actions"><button class="button button--primary button--md" type="button">Купить</button></div>
               </article>
             </div>
             <div class="catalog-price-list">
-              <div class="catalog-price-list__head">
-                <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Розничная и оптовая цена</h3></div>
-                <p>Опт — от 50 баллонов. Если объем не указан, цену уточнит менеджер.</p>
-              </div>
-              <div class="price-table-wrap">
-                <table class="price-table price-table--compact">
-                  <thead><tr><th>Фреон и вариант</th><th>Розница</th><th>Опт от 50 шт.</th></tr></thead>
-                  <tbody>
-                    <tr><td>R-22</td><td>9 900 ₽</td><td>9 700 ₽</td></tr>
-                    <tr><td>R-404A · 10,9 кг</td><td>9 700 ₽</td><td>9 500 ₽</td></tr>
-                    <tr><td>R-404A · 9,5 кг</td><td>8 600 ₽</td><td>8 400 ₽</td></tr>
-                    <tr><td>R-407C · 11,3 кг</td><td>10 600 ₽</td><td>10 400 ₽</td></tr>
-                    <tr><td>R-407C · 10 кг</td><td>9 500 ₽</td><td>9 300 ₽</td></tr>
-                    <tr><td>R-507</td><td>9 700 ₽</td><td>9 500 ₽</td></tr>
-                    <tr><td>R-290</td><td>6 100 ₽</td><td>По запросу</td></tr>
-                    <tr><td>R-600</td><td>6 100 ₽</td><td>По запросу</td></tr>
-                    <tr><td>R-32</td><td>11 100 ₽</td><td>По запросу</td></tr>
-                  </tbody>
-                </table>
+              <div class="catalog-price-matrix">
+                <div class="catalog-price-matrix__head">
+                  <div class="tagged"><span class="tag-label">&lt;h3&gt;</span><h3>Подробная матрица цен</h3></div>
+                </div>
+                <div class="price-table-wrap">
+                  <table class="price-table price-table--full">
+                    <thead>
+                      <tr><th rowspan="2" scope="col">Наименование</th><th rowspan="2" scope="col">Марка</th><th rowspan="2" scope="col">Вес</th><th rowspan="2" scope="col">Кол-во</th><th colspan="4" scope="colgroup">Цена</th></tr>
+                      <tr><th scope="col">Наличными</th><th scope="col">Перевод</th><th scope="col">НДС 5%</th><th scope="col">НДС 22%</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th rowspan="3" scope="rowgroup">R-22</th><td rowspan="3">Sanmei</td><td rowspan="3">13,6 кг</td><td>От 1 шт.</td><td>9 900 ₽</td><td>10 400 ₽</td><td>11 000 ₽</td><td>12 670 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>9 800 ₽</td><td>10 300 ₽</td><td>10 890 ₽</td><td>12 420 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>9 700 ₽</td><td>10 200 ₽</td><td>10 780 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="6" scope="rowgroup">R-410A</th><td rowspan="3">REFRIGERANT</td><td rowspan="6">11,3 кг</td><td>От 1 шт.</td><td>10 300 ₽</td><td>10 800 ₽</td><td>11 440 ₽</td><td>13 180 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>10 200 ₽</td><td>10 700 ₽</td><td>11 330 ₽</td><td>12 930 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>10 100 ₽</td><td>10 600 ₽</td><td>11 220 ₽</td><td>Индивидуально</td></tr>
+                      <tr><td rowspan="3">Ассорти</td><td>От 1 шт.</td><td>11 300 ₽</td><td>11 900 ₽</td><td>12 560 ₽</td><td>14 460 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>11 200 ₽</td><td>11 800 ₽</td><td>12 440 ₽</td><td>14 210 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>11 100 ₽</td><td>11 700 ₽</td><td>12 330 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="6" scope="rowgroup">R-404A</th><td rowspan="6">Refrigerant, Flyer</td><td rowspan="3">9,5 кг</td><td>От 1 шт.</td><td>8 600 ₽</td><td>9 000 ₽</td><td>9 560 ₽</td><td>11 010 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>8 500 ₽</td><td>8 900 ₽</td><td>9 440 ₽</td><td>10 750 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>8 400 ₽</td><td>8 800 ₽</td><td>9 330 ₽</td><td>Индивидуально</td></tr>
+                      <tr><td rowspan="3">10,9 кг</td><td>От 1 шт.</td><td>9 700 ₽</td><td>10 200 ₽</td><td>10 780 ₽</td><td>12 420 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>9 600 ₽</td><td>10 100 ₽</td><td>10 670 ₽</td><td>12 160 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>9 500 ₽</td><td>10 000 ₽</td><td>10 560 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="6" scope="rowgroup">R-134A</th><td rowspan="3">REFRIGERANT</td><td rowspan="6">13,6 кг</td><td>От 1 шт.</td><td>11 500 ₽</td><td>12 100 ₽</td><td>12 780 ₽</td><td>14 720 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>11 400 ₽</td><td>12 000 ₽</td><td>12 670 ₽</td><td>17 460 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>11 300 ₽</td><td>11 900 ₽</td><td>12 560 ₽</td><td>Индивидуально</td></tr>
+                      <tr><td rowspan="3">JH / FLYER / SANMEI</td><td>От 1 шт.</td><td>14 300 ₽</td><td>15 000 ₽</td><td>15 890 ₽</td><td>18 300 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>14 200 ₽</td><td>14 900 ₽</td><td>15 780 ₽</td><td>18 050 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>14 100 ₽</td><td>14 800 ₽</td><td>15 670 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="6" scope="rowgroup">R-407C</th><td rowspan="6">Sanmei</td><td rowspan="3">10 кг</td><td>От 1 шт.</td><td>9 500 ₽</td><td>10 000 ₽</td><td>10 560 ₽</td><td>12 160 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>9 400 ₽</td><td>9 900 ₽</td><td>10 440 ₽</td><td>11 900 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>9 300 ₽</td><td>9 800 ₽</td><td>10 330 ₽</td><td>Индивидуально</td></tr>
+                      <tr><td rowspan="3">11,3 кг</td><td>От 1 шт.</td><td>10 600 ₽</td><td>11 100 ₽</td><td>11 780 ₽</td><td>13 570 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>10 500 ₽</td><td>11 000 ₽</td><td>11 670 ₽</td><td>13 310 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>10 400 ₽</td><td>10 900 ₽</td><td>11 560 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="3" scope="rowgroup">R-507</th><td rowspan="3">—</td><td rowspan="3">11,3 кг</td><td>От 1 шт.</td><td>9 700 ₽</td><td>10 200 ₽</td><td>10 780 ₽</td><td>12 420 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td>9 600 ₽</td><td>10 100 ₽</td><td>10 670 ₽</td><td>12 160 ₽</td></tr>
+                      <tr><td>От 50 шт.</td><td>9 500 ₽</td><td>10 000 ₽</td><td>10 560 ₽</td><td>Индивидуально</td></tr>
+
+                      <tr><th rowspan="3" scope="rowgroup">R-290</th><td rowspan="3">—</td><td rowspan="3">5 кг</td><td>От 1 шт.</td><td>6 100 ₽</td><td>6 400 ₽</td><td>6 780 ₽</td><td>7 810 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td colspan="4">Индивидуально</td></tr>
+                      <tr><td>От 50 шт.</td><td colspan="4">Индивидуально</td></tr>
+
+                      <tr><th rowspan="3" scope="rowgroup">R-600</th><td rowspan="3">—</td><td rowspan="3">6,5 кг</td><td>От 1 шт.</td><td>6 100 ₽</td><td>6 400 ₽</td><td>6 780 ₽</td><td>7 810 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td colspan="4">Индивидуально</td></tr>
+                      <tr><td>От 50 шт.</td><td colspan="4">Индивидуально</td></tr>
+
+                      <tr><th rowspan="3" scope="rowgroup">R-32</th><td rowspan="3">—</td><td rowspan="3">9,5 кг</td><td>От 1 шт.</td><td>11 100 ₽</td><td>11 700 ₽</td><td>12 330 ₽</td><td>14 210 ₽</td></tr>
+                      <tr><td>От 10 шт.</td><td colspan="4">Индивидуально</td></tr>
+                      <tr><td>От 50 шт.</td><td colspan="4">Индивидуально</td></tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -357,26 +384,30 @@
         <section class="section section--surface">
           <div class="container">
             <div class="section-head">
-              <div class="tagged"><span class="tag-label">&lt;h2&gt;</span><h2>Отзывы покупателей о поставках фреона</h2></div>
+              <div class="tagged"><span class="tag-label">&lt;h2&gt;</span><h2>Отзывы покупателей</h2></div>
+              <a class="reviews-platform" href=""><span>Отзывы на Яндекс Картах</span><img src="assets/icons/arrow-small-default.svg" alt=""></a>
             </div>
             <div class="reviews-grid">
               <article class="review-card">
-                <p class="review-card__quote">«Нужно было срочно закрыть заявку на R-410A. Менеджер подтвердил количество на складе, быстро выставил счет, после оплаты товар передали в доставку».</p>
-                <div class="review-card__source"><strong>Сервисная компания, Москва</strong><span>Текст для прототипа</span></div>
+                <div class="review-card__stars" aria-label="5 звезд"><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""></div>
+                <p class="review-card__quote">Здесь появится подтвержденный отзыв покупателя с Яндекс Карт.</p>
+                <div class="review-card__source"><strong>Отзыв покупателя</strong><span>Дата покупки и текст добавляются из опубликованного отзыва</span></div>
               </article>
               <article class="review-card">
-                <p class="review-card__quote">«До оплаты запросили сертификаты и сведения по партии. Документы получили вместе со счетом, поэтому закупку согласовали без дополнительных запросов».</p>
-                <div class="review-card__source"><strong>Специалист отдела снабжения</strong><span>Текст для прототипа</span></div>
+                <div class="review-card__stars" aria-label="5 звезд"><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""></div>
+                <p class="review-card__quote">Здесь появится подтвержденный отзыв покупателя с Яндекс Карт.</p>
+                <div class="review-card__source"><strong>Отзыв покупателя</strong><span>Дата покупки и текст добавляются из опубликованного отзыва</span></div>
               </article>
               <article class="review-card">
-                <p class="review-card__quote">«Сравнили несколько предложений. Цена на нужный объем оказалась выгоднее, а отправку согласовали с подходящего склада».</p>
-                <div class="review-card__source"><strong>Региональный продавец</strong><span>Текст для прототипа</span></div>
+                <div class="review-card__stars" aria-label="5 звезд"><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""><img src="assets/icons/star-rating.svg" alt=""></div>
+                <p class="review-card__quote">Здесь появится подтвержденный отзыв покупателя с Яндекс Карт.</p>
+                <div class="review-card__source"><strong>Отзыв покупателя</strong><span>Дата покупки и текст добавляются из опубликованного отзыва</span></div>
               </article>
             </div>
           </div>
         </section>
       </div>
-      <aside class="block-comment"><div class="block-comment__inner"><p class="comment-kicker">Комментарий</p><h2>Отзывы покупателей</h2><p class="comment-text">Блок дает социальное подтверждение наличия товара, выгодной цены, быстрой работы и официальных документов. В прототипе используется явно помеченный временный текст; перед публикацией его нужно заменить реальными отзывами.</p></div></aside>
+      <aside class="block-comment"><div class="block-comment__inner"><p class="comment-kicker">Комментарий</p><h2>Отзывы покупателей</h2><p class="comment-text">Блок ведет на независимую площадку и показывает только подтвержденные отзывы. Карточки заполняются после получения опубликованных отзывов с Яндекс Карт.</p></div></aside>
     </div>
 
     <div class="block-row">
