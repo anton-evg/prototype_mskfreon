@@ -911,6 +911,13 @@ button,
 .reviews-tabs {
   display: flex;
   gap: 8px;
+  margin: 0;
+}
+
+.reviews-tabs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 0 18px;
 }
 
@@ -945,6 +952,20 @@ button,
 .reviews-platform img {
   width: 16px;
   height: 16px;
+}
+
+.reviews-head-actions,
+.reviews-slider-controls {
+  display: flex;
+  align-items: center;
+}
+
+.reviews-head-actions {
+  gap: 16px;
+}
+
+.reviews-slider-controls {
+  gap: 6px;
 }
 
 .review-card {
